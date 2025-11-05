@@ -1,0 +1,192 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Running Tips | Run Haarlem</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+<header class="site-header">
+	<a class="brand" href="index.html" aria-label="Run Haarlem home">
+		<img src="img/logo.png" alt="Run Haarlem logo">
+	</a>
+
+	<nav class="nav" aria-label="Primary Navigation">
+		<a href="index.html">Home</a>
+		<a href="tips.html" class="active">Tips</a>
+		<a href="route-kenaupark.html">Route 1</a>
+		<a href="route-brouwerskolkpark.html">Route 2</a>
+		<a href="route-spaarne.html">Route 3</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+
+	<button class="hamburger" aria-label="Menu" aria-controls="mobileMenu" aria-expanded="false">
+		<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+			<path d="M3 6h18M3 12h18M3 18h18"/>
+		</svg>
+	</button>
+</header>
+
+<nav id="mobileMenu" class="mobile-menu" aria-label="Mobile Navigation">
+	<p class="mm container">
+		<a href="index.html">Home</a>
+		<a href="tips.html" class="active">Tips</a>
+		<a href="route-kenaupark.html">Route 1</a>
+		<a href="route-brouwerskolkpark.html">Route 2</a>
+		<a href="route-spaarne.html">Route 3</a>
+		<a href="contact.html">Contact</a>
+	</p>
+</nav>
+
+
+<main class="container route">
+
+	<h1 class="page-title">Improve your running</h1>
+
+	
+	<section class="panel intro">
+		<p><strong>Improve your running experience</strong> with simple tips and tricks. Whether you are a beginner or an experienced runner, these ideas will help you stay safe, motivated, and enjoy every run.</p>
+	</section>
+
+
+	<section class="pair">
+		<article class="panel">
+			<ol>
+				<li>Warm Up Before Running – Spend 5–10 minutes stretching or walking.</li>
+				<li>Start Slow – Begin at a comfortable pace, especially on longer routes.</li>
+			</ol>
+		</article>
+
+		<figure>
+			<img src="img/tip1.jpg" alt="Runner warming up in park">
+		</figure>
+	</section>
+
+
+	<section class="pair">
+		<figure class="swap-on-mobile">
+			<img src="img/tip2.jpg" alt="Runner starting slow pace">
+		</figure>
+
+		<article class="panel">
+			<ol start="3">
+				<li>Stay Hydrated – Drink water before, during, and after your run.</li>
+				<li>Listen to Your Body – Stop or slow down if you feel pain or unusual discomfort.</li>
+			</ol>
+		</article>
+	</section>
+
+
+	<section class="pair">
+		<article class="panel">
+			<ol start="5">
+				<li>Use Proper Shoes – Invest in running shoes that fit well and support your feet.</li>
+				<li>Maintain Good Posture – Keep your back straight, shoulders relaxed and arms moving naturally.</li>
+			</ol>
+		</article>
+
+		<figure>
+			<img src="img/tip3.jpg" alt="Runner drinking water">
+		</figure>
+	</section>
+
+
+	<section class="pair">
+		<figure class="swap-on-mobile">
+			<img src="img/tip4.jpg" alt="Runner stretching after run">
+		</figure>
+
+		<article class="panel">
+			<ol start="7">
+				<li>Set Goals – Small achievable goals help you stay motivated and track progress.</li>
+				<li>Cool Down & Stretch – After every run, take a few minutes to stretch and prevent soreness.</li>
+			</ol>
+		</article>
+	</section>
+
+
+	<nav class="cta-wrap" aria-label="Tips CTA">
+		<a href="route-kenaupark.html" class="cta">START YOUR RUN NOW!</a>
+	</nav>
+
+ 
+	<nav class="route-buttons" aria-label="Routes navigation">
+		<a href="route-kenaupark.html" class="route-btn">Route 1</a>
+		<a href="route-brouwerskolkpark.html" class="route-btn">Route 2</a>
+		<a href="route-spaarne.html" class="route-btn">Route 3</a>
+	</nav>
+
+</main>
+
+
+<footer>
+	<section class="footer-inner container" aria-labelledby="footer-links">
+		<h4 id="footer-links">QUICK LINKS</h4>
+
+		<nav aria-label="Footer Navigation">
+			<a href="index.html">Home</a>
+			<a href="tips.html" class="active">Tips</a>
+			<a href="route-kenaupark.html">Route 1</a>
+			<a href="route-brouwerskolkpark.html">Route 2</a>
+			<a href="route-spaarne.html">Route 3</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+		<small>Run Haarlem © 2025 All Rights Reserved</small>
+	</section>
+</footer>
+
+
+
+<section id="cookieBanner" class="cookie-static">
+	<span>
+		We use essential cookies to improve the website only.
+	</span>
+	<button id="cookieOk">OK</button>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const okBtn = document.getElementById("cookieOk");
+	const banner = document.getElementById("cookieBanner");
+
+	if (okBtn && banner) {
+		okBtn.addEventListener("click", () => {
+			banner.style.display = "none";
+		});
+	}
+});
+</script>
+
+
+
+
+ 
+
+<script>
+	const burger = document.querySelector('.hamburger');
+	const menue = document.getElementById('mobile-menu');
+
+	burger?.addEventListener('click', () => {
+
+		const isOpen = !menu.hasAttribute('hidden');
+
+		if (isOpen) {
+			menu.setAttribute('hidden', '');
+			burger.setAttribute('aria-expanded', 'false');
+		} else {
+			menu.removeAttribute('hidden');
+			burger.setAttribute('aria-expanded', 'true');
+		}
+
+	});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Thank you | Run Haarlem</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+	<header class="site-header">
+		<figure class="brand"><img src="img/logo.png" alt="Run Haarlem logo"></figure>
+
+		<nav class="nav">
+			<a href="index.html">Home</a>
+			<a href="tips.html">Tips</a>
+			<a href="route-kenaupark.html">Route 1</a>
+			<a href="route-brouwerskolkpark.html">Route 2</a>
+			<a href="route-spaarne.html">Route 3</a>
+			<a href="contact.html" class="active">Contact</a>
+		</nav>
+
+		<button class="hamburger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu">
+			<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+				<path d="M3 6h18M3 12h18M3 18h18"/>
+			</svg>
+		</button>
+	</header>
+
+	<section id="mobile-menu" class="mobile-menu" hidden>
+		<nav aria-label="Mobile">
+			<a href="index.html">Home</a>
+			<a href="tips.html">Tips</a>
+			<a href="route-kenaupark.html">Route 1</a>
+			<a href="route-brouwerskolkpark.html">Route 2</a>
+			<a href="route-spaarne.html">Route 3</a>
+			<a href="contact.html" class="active">Contact</a>
+		</nav>
+	</section>
+
+ 
+	<main class="thankyou container">
+
+		<h1 class="thanks-title">Thank you for contacting us !</h1>
+
+		<p class="thanks-action">
+			<a href="index.html" class="thanks-btn">Go back to Homepage</a>
+		</p>
+
+	</main>
+
+
+	<footer>
+		<section class="footer-inner container">
+			<h4>QUICK LINKS</h4>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="tips.html">Tips</a>
+				<a href="route-kenaupark.html">Route 1</a>
+				<a href="route-brouwerskolkpark.html">Route 2</a>
+				<a href="route-spaarne.html">Route 3</a>
+				<a class="active" href="contact.html">Contact</a>
+			</nav>
+			<small>Run Haarlem © 2025 All Rights Reserved</small>
+		</section>
+	</footer>
+
+<script>
+	const b = document.querySelector(".hamburger");
+	const m = document.getElementById("mobile-menu");
+
+	b?.addEventListener("click", () => {
+		const open = !m.hasAttribute("hidden");
+		if (open) {
+			m.setAttribute("hidden", "");
+			b.setAttribute("aria-expanded", "false");
+		} else {
+			m.removeAttribute("hidden");
+			b.setAttribute("aria-expanded", "true");
+		}
+	});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	const burger = document.querySelector('.hamburger');
+	const menu   = document.getElementById('mobileMenu');  
+
+	if (!burger || !menu) return;  
+
+	burger.addEventListener('click', () => {
+		menu.classList.toggle('open');
+
+		const isOpen = menu.classList.contains('open');
+		burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+	});
+});
+</script>
+
+
+
+<section id="cookieBanner" class="cookie-static">
+	<span>
+		We use essential cookies to improve the website only.
+	</span>
+	<button id="cookieOk">OK</button>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const okBtn = document.getElementById("cookieOk");
+	const banner = document.getElementById("cookieBanner");
+
+	if (okBtn && banner) {
+		okBtn.addEventListener("click", () => {
+			banner.style.display = "none";
+		});
+	}
+});
+</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Run Haarlem — Home</title>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+	<header class="site-header">
+		<a class="brand" href="index.html" aria-label="Run Haarlem home">
+			<img src="img/logo.png" alt="Run Haarlem logo" />
+		</a>
+
+		<nav class="nav" aria-label="Primary">
+			<a href="index.html" class="active">Home</a>
+			<a href="tips.html">Tips</a>
+			<a href="route-kenaupark.html">Route 1</a>
+			<a href="route-brouwerskolkpark.html">Route 2</a>
+			<a href="route-spaarne.html">Route 3</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+		<button class="hamburger" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
+			<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+				<path d="M3 6h18M3 12h18M3 18h18" />
+			</svg>
+		</button>
+
+	 
+		<nav id="mobile-menu" class="mobile-menu container" hidden aria-label="Mobile">
+			<a href="index.html" class="active">Home</a>
+			<a href="tips.html">Tips</a>
+			<a href="route-kenaupark.html">Route 1</a>
+			<a href="route-brouwerskolkpark.html">Route 2</a>
+			<a href="route-spaarne.html">Route 3</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+
+
+	<main class="home container">
+
+ 
+		<section class="hero">
+			<figure class="hero-media">
+				<img src="img/home-hero.jpg" alt="People running by a canal in Haarlem" />
+			</figure>
+			<article class="hero-text panel">
+				<h1>Start your walking journey in Haarlem</h1>
+				<p>
+					Running is one of the easiest ways to stay active and healthy.
+					This site helps you find simple walking routes between 1–5 km, perfect for beginners who want to build a habit.
+					Choose from beginner-friendly parks to scenic riverside routes — each with a simple loop map, start & finish point, so you know exactly where to go.
+				</p>
+			</article>
+		</section>
+
+ 
+		<section class="home-grid container" aria-label="Featured">
+	 
+			<article class="home-card">
+				<a class="thumb" href="tips.html">
+					<img src="img/tips-home.jpg" alt="Running tips card">
+				</a>
+				<p class="caption">Tips</p>
+				<a class="btn-pill" href="tips.html">learn more</a>
+			</article>
+
+ 
+			<article class="home-card">
+				<a class="thumb" href="route-kenaupark.html">
+					<img src="img/kenau-2.jpg" alt="Kenaupark">
+				</a>
+				<p class="caption">Kenaupark</p>
+				<a class="btn-pill" href="route-kenaupark.html">learn more</a>
+			</article>
+
+			
+			<article class="home-card">
+				<a class="thumb" href="route-brouwerskolkpark.html">
+					<img src="img/brouw-2.jpg" alt="Brouwerskolkpark">
+				</a>
+				<p class="caption">Brouwerskolkpark</p>
+				<a class="btn-pill" href="route-brouwerskolkpark.html">learn more</a>
+			</article>
+
+		
+			<article class="home-card">
+				<a class="thumb" href="route-spaarne.html">
+					<img src="img/spaarne-2.jpg" alt="Spaarne River">
+				</a>
+				<p class="caption">Spaarne River</p>
+				<a class="btn-pill" href="route-spaarne.html">learn more</a>
+			</article>
+		</section>
+
+	</main>
+
+
+	<footer class="site-footer">
+		<section class="footer-inner container" aria-labelledby="quick-links">
+			<h4 id="quick-links">Quick Links</h4>
+			<nav aria-label="Footer">
+				<a href="index.html">Home</a>
+				<a href="tips.html">Tips</a>
+				<a href="route-kenaupark.html">Route 1</a>
+				<a href="route-brouwerskolkpark.html">Route 2</a>
+				<a href="route-spaarne.html">Route 3</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+			<small>Run Haarlem © 2025 All Rights Reserved</small>
+		</section>
+	</footer>
+
+	<script>
+		const btn = document.querySelector('.hamburger');
+		const menu = document.getElementById('mobile-menu');
+		btn?.addEventListener('click', () => {
+			const open = !menu.hasAttribute('hidden');
+			if (open) {
+				menu.setAttribute('hidden', '');
+				btn.setAttribute('aria-expanded', 'false');
+			} else {
+				menu.removeAttribute('hidden');
+				btn.setAttribute('aria-expanded', 'true');
+			}
+		});
+	</script>
+</body>
+</html>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+
+	const burger = document.querySelector('.hamburger');
+	const menu   = document.getElementById('mobileMenu');  
+
+	if (!burger || !menu) return;  
+
+	burger.addEventListener('click', () => {
+		menu.classList.toggle('open');
+
+		const isOpen = menu.classList.contains('open');
+		burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+	});
+});
+</script>
+
+
+<section id="cookieBanner" class="cookie-static">
+	<span>
+		We use essential cookies to improve the website only.
+	</span>
+	<button id="cookieOk">OK</button>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+	const okBtn = document.getElementById("cookieOk");
+	const banner = document.getElementById("cookieBanner");
+
+	if (okBtn && banner) {
+		okBtn.addEventListener("click", () => {
+			banner.style.display = "none";
+		});
+	}
+});
+</script>
+ 
+</body>
+</html>
