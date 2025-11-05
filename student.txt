@@ -2,4 +2,4 @@ Student name : Narcis Khorshidi
 Student number : 741524 
 Student class : ITC
 GitHub Repositpry :https://github.com/Narcis-kho/my-new-repo.git 
-GitHub Pages URL : 
+GitHub Pages URL : https://narcis-kho.github.io/my-new-repo/
